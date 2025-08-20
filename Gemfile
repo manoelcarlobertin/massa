@@ -78,3 +78,21 @@ gem "rack-cors", "~> 1.1" # Middleware for handling Cross-Origin Resource Sharin
 gem "rack-mini-profiler", "~> 2.3" # Performance profiling for Rails applications
 gem "rollbar", "~> 3.3" # Error tracking and monitoring service
 gem "redis", "~> 4.6" # Redis client for Ruby
+gem "redis-namespace", "~> 1.8" # Namespacing for Redis keys
+gem "httparty", "~> 0.20" # HTTP client library
+gem "mini_magick", "~> 4.11" # Image processing library
+gem "aws-sdk-s3", "~> 1.100" # AWS SDK for S3
+gem "image_optim", "~> 0.29" # Image optimization library
+gem "image_optim_pack", "~> 0.1" # Precompiled binaries for image_optim
+gem "meta-tags", "~> 2.16" # Manage meta tags for SEO
+gem "friendly_id", "~> 5.4" # Human-friendly URLs
+gem "public_activity", "~> 1.6" # Track activities in your application
+gem "chartkick", "~> 4.2" # Create beautiful charts with JavaScript
+gem "view_component", "~> 3.4" # Build reusable, testable & encapsulated view components
+gem "hotwire-livereload", "~> 0.2" # LiveReload for Hotwire applications
+gem "rails_best_practices", "~> 1.22" # Code quality analyzer for Rails applications
+gem "bullet", "~> 7.0" # N+1 query detection and optimization
+gem "sidekiq-cron", "~> 1.4" # Schedule Sidekiq jobs with cron syntax
+gem "sidekiq-unique-jobs", "~> 7.1" # Ensure uniqueness of Sidekiq jobs
+gem "sidekiq-status", "~> 1.0" # Track the status of Sidekiq jobs
+gem "sidekiq-scheduler", "~> 3.0" # Schedule recurring Sidekiq jobs
