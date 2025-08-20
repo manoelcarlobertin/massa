@@ -6,7 +6,7 @@
     </h1>
 
     <div class="mb-4">
-      <%= link_to 'Nova Vaga' , new_vaga_path,
+      <%= link_to 'Nova Vaga', new_vaga_path,
         class: 'bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded' %>
     </div>
 
@@ -22,22 +22,19 @@
                 <%= vaga.description.to_plain_text.truncate(100) %>
               </p>
               <div class="mt-4">
-                <%= link_to 'Ver Detalhes' , vaga_path(vaga),
-                  class: 'inline-block bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded text-sm'
-                  %>
-                  <%= link_to 'Editar' , edit_vaga_path(vaga),
-                    class: 'inline-block bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded text-sm ml-2'
-                    %>
-                    <%= button_to 'Excluir' , vaga_path(vaga), method: :delete, data: { confirm: 'Tem certeza?' },
-                      class: 'inline-block bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded text-sm ml-2'
-                      %>
+                <%= link_to 'Ver Detalhes', vaga_path(vaga),
+                  class: 'inline-block bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded text-sm' %>
+                <%= link_to 'Editar', edit_vaga_path(vaga),
+                    class: 'inline-block bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded text-sm ml-2' %>
+                    <%= button_to 'Excluir', vaga_path(vaga), method: :delete, data: { confirm: 'Tem certeza?' },
+                      class: 'inline-block bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded text-sm ml-2' %>
               </div>
             </div>
           </div>
-          <% end %>
-      </div>
-      <% else %>
-        <p>Nenhuma vaga cadastrada ainda.</p>
         <% end %>
+      </div>
+    <% else %>
+      <p>Nenhuma vaga cadastrada ainda.</p>
+    <% end %>
 
   </div>
