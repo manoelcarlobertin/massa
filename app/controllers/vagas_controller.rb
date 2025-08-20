@@ -60,7 +60,8 @@ class VagasController < ApplicationController
   private
 
   def set_vaga
-    @vaga = Vaga.friendly.find(params[:id])
+    @vaga = Vaga.find(params[:id])
+    #@vaga = Vaga.friendly.find(params[:id])
   end
 
   def vaga_params

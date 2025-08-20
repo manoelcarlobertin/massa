@@ -1,6 +1,6 @@
 class Vaga < ApplicationRecord
-  extend FriendlyId
-  friendly_id :title, use: :slugged
+  # extend FriendlyId
+  # friendly_id :title, use: :slugged
 
   # Use o campo :title para criar a URL. Salve o resultado na coluna slug (use: :slugged).
   has_rich_text :description

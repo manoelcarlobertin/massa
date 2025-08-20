@@ -1,10 +1,39 @@
-/*
- * This is a manifest file that'll be compiled into application.css.
- *
- * With Propshaft, assets are served efficiently without preprocessing steps. You can still include
- * application-wide styles in this file, but keep in mind that CSS precedence will follow the standard
- * cascading order, meaning styles declared later in the document or manifest will override earlier ones,
- * depending on specificity.
- *
- * Consider organizing styles into separate files for maintainability.
- */
+/* Variáveis para cores personalizadas */
+:root {
+  --cor-primaria: #2563eb;
+  /* azul Tailwind 600 */
+  --cor-secundaria: #1e40af;
+  /* azul Tailwind 800 */
+}
+
+/* Transição suave para links e botões */
+a,
+button {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover no cabeçalho para dar um efeito */
+header:hover {
+  background-color: var(--cor-secundaria);
+}
+
+/* Rodapé com texto menor e espaçamento */
+footer {
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+}
+
+/* Exemplo de animação simples */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+main {
+  animation: fadeIn 0.5s ease-in;
+}
