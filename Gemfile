@@ -94,5 +94,5 @@ gem "rails_best_practices", "~> 1.22" # Code quality analyzer for Rails applicat
 gem "sidekiq-cron", "~> 1.4" # Schedule Sidekiq jobs with cron syntax
 gem "sidekiq-unique-jobs", "~> 7.1" # Ensure uniqueness of Sidekiq jobs
 gem "sidekiq-status", "~> 1.0" # Track the status of Sidekiq jobs
-gem "sidekiq-scheduler", "~> 3.0" # Schedule recurring Sidekiq jobs
+gem "sidekiq-scheduler", "~> 6.0" # Schedule recurring Sidekiq jobs
 gem "tailwindcss-rails" # Tailwind CSS integration for Rails

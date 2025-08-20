@@ -153,7 +153,6 @@ GEM
       dotenv (= 2.8.1)
       railties (>= 3.2)
     drb (2.2.3)
-    e2mmap (0.1.0)
     ed25519 (1.4.0)
     erb (5.0.2)
     erubi (1.13.1)
@@ -491,13 +490,9 @@ GEM
       fugit (~> 1.8)
       globalid (>= 1.0.1)
       sidekiq (>= 6)
-    sidekiq-scheduler (3.2.2)
-      e2mmap
-      redis (>= 3, < 5)
+    sidekiq-scheduler (6.0.1)
       rufus-scheduler (~> 3.2)
-      sidekiq (>= 3)
-      thwait
-      tilt (>= 1.4.0)
+      sidekiq (>= 7.3, < 9)
     sidekiq-status (1.1.4)
       chronic_duration
       sidekiq (>= 3.0)
@@ -559,9 +554,6 @@ GEM
     thruster (0.1.15-arm64-darwin)
     thruster (0.1.15-x86_64-darwin)
     thruster (0.1.15-x86_64-linux)
-    thwait (0.2.0)
-      e2mmap
-    tilt (2.6.1)
     timeout (0.4.3)
     turbo-rails (2.0.16)
       actionpack (>= 7.1.0)
@@ -651,7 +643,7 @@ DEPENDENCIES
   shoulda-matchers (~> 5.0)
   sidekiq (~> 7.0)
   sidekiq-cron (~> 1.4)
-  sidekiq-scheduler (~> 3.0)
+  sidekiq-scheduler (~> 6.0)
   sidekiq-status (~> 1.0)
   sidekiq-unique-jobs (~> 7.1)
   simple_form (~> 5.1)
