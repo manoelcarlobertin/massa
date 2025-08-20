@@ -63,7 +63,7 @@ gem "pagy", "~> 6.4"
 gem "sidekiq", "~> 7.0" # Background job processing
 gem "letter_opener", "~> 1.0" # Preview emails in development
 gem "faker", "~> 2.21" # Generate fake data for testing
-gem "rspec-rails", "~> 6.0" # RSpec for testing Rails applications
+gem "rspec-rails", "~> 8.0" # RSpec for testing Rails applications
 gem "factory_bot_rails", "~> 6.2" # Factory Bot for setting up Ruby objects as test data
 gem "shoulda-matchers", "~> 5.0" # RSpec matchers for testing Rails applications
 gem "database_cleaner-active_record", "~> 2.0" # Strategy for cleaning the database in tests
