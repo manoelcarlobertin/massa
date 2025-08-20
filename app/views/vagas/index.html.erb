@@ -1,16 +1,43 @@
-<p style="color: green"><%= notice %></p>
+<% provide(:title, 'Vagas de Emprego' ) %>
 
-<% content_for :title, "Vagas" %>
+  <div class="container mx-auto p-6">
+    <h1 class="text-3xl font-bold mb-4">
+      <%= yield(:title) %>
+    </h1>
 
-<h1>Vagas</h1>
+    <div class="mb-4">
+      <%= link_to 'Nova Vaga' , new_vaga_path,
+        class: 'bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded' %>
+    </div>
 
-<div id="vagas">
-  <% @vagas.each do |vaga| %>
-    <%= render vaga %>
-    <p>
-      <%= link_to "Show this vaga", vaga %>
-    </p>
-  <% end %>
-</div>
+    <% if @vagas.present? %>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <% @vagas.each do |vaga| %>
+          <div class="bg-white shadow-md rounded-md overflow-hidden">
+            <div class="p-4">
+              <h2 class="text-xl font-semibold mb-2">
+                <%= vaga.title %>
+              </h2>
+              <p class="text-gray-700 text-sm">
+                <%= vaga.description.to_plain_text.truncate(100) %>
+              </p>
+              <div class="mt-4">
+                <%= link_to 'Ver Detalhes' , vaga_path(vaga),
+                  class: 'inline-block bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded text-sm'
+                  %>
+                  <%= link_to 'Editar' , edit_vaga_path(vaga),
+                    class: 'inline-block bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded text-sm ml-2'
+                    %>
+                    <%= button_to 'Excluir' , vaga_path(vaga), method: :delete, data: { confirm: 'Tem certeza?' },
+                      class: 'inline-block bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded text-sm ml-2'
+                      %>
+              </div>
+            </div>
+          </div>
+          <% end %>
+      </div>
+      <% else %>
+        <p>Nenhuma vaga cadastrada ainda.</p>
+        <% end %>
 
-<%= link_to "New vaga", new_vaga_path %>
+  </div>
