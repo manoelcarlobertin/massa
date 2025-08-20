@@ -266,7 +266,8 @@ GEM
     meta-tags (2.22.1)
       actionpack (>= 6.0.0, < 8.1)
     method_source (1.1.0)
-    mini_magick (4.13.2)
+    mini_magick (5.3.1)
+      logger
     mini_mime (1.1.5)
     minitest (5.25.5)
     msgpack (1.8.0)
@@ -629,7 +630,7 @@ DEPENDENCIES
   kamal
   letter_opener (~> 1.0)
   meta-tags (~> 2.16)
-  mini_magick (~> 4.11)
+  mini_magick (~> 5.3)
   pagy (~> 6.4)
   propshaft
   public_activity (~> 1.6)

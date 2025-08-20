@@ -80,7 +80,7 @@ gem "rollbar", "~> 3.3" # Error tracking and monitoring service
 gem "redis", "~> 4.6" # Redis client for Ruby
 gem "redis-namespace", "~> 1.8" # Namespacing for Redis keys
 gem "httparty", "~> 0.20" # HTTP client library
-gem "mini_magick", "~> 4.11" # Image processing library
+gem "mini_magick", "~> 5.3" # Image processing library
 gem "aws-sdk-s3", "~> 1.100" # AWS SDK for S3
 gem "image_optim", "~> 0.29" # Image optimization library
 gem "image_optim_pack", "~> 0.1" # Precompiled binaries for image_optim
