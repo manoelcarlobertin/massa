@@ -86,7 +86,7 @@ gem "image_optim", "~> 0.29" # Image optimization library
 gem "image_optim_pack", "~> 0.1" # Precompiled binaries for image_optim
 gem "meta-tags", "~> 2.16" # Manage meta tags for SEO
 gem "friendly_id", "~> 5.4" # Human-friendly URLs
-gem "public_activity", "~> 1.6" # Track activities in your application
+gem "public_activity", "~> 3.0" # Track activities in your application
 gem "chartkick", "~> 4.2" # Create beautiful charts with JavaScript
 gem "view_component", "~> 3.4" # Build reusable, testable & encapsulated view components
 gem "hotwire-livereload", "~> 0.2" # LiveReload for Hotwire applications
