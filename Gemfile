@@ -91,7 +91,7 @@ gem "chartkick", "~> 4.2" # Create beautiful charts with JavaScript
 gem "view_component", "~> 3.4" # Build reusable, testable & encapsulated view components
 gem "hotwire-livereload", "~> 0.2" # LiveReload for Hotwire applications
 gem "rails_best_practices", "~> 1.22" # Code quality analyzer for Rails applications
-gem "sidekiq-cron", "~> 1.4" # Schedule Sidekiq jobs with cron syntax
+gem "sidekiq-cron", "~> 2.3" # Schedule Sidekiq jobs with cron syntax
 gem "sidekiq-unique-jobs", "~> 7.1" # Ensure uniqueness of Sidekiq jobs
 gem "sidekiq-status", "~> 1.0" # Track the status of Sidekiq jobs
 gem "sidekiq-scheduler", "~> 3.0" # Schedule recurring Sidekiq jobs
