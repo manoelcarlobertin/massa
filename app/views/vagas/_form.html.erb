@@ -2,12 +2,22 @@
   <%= f.error_notification %>
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
-  <div class="form-inputs">
-    <%= f.input :title, label: 'Título da Vaga', placeholder: 'Ex: Desenvolvedor Ruby on Rails Pleno' %>
-    <%= f.input :description, as: :rich_text_area, label: 'Descrição Detalhada da Vaga' %>
+  <div class="mb-4">
+    <%= f.input :title, label: 'Título da Vaga', placeholder: 'Ex: Desenvolvedor Ruby on Rails Pleno', input_html: {
+      class: 'shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
+      }, label_html: { class: 'block text-gray-700 text-sm font-bold mb-2' } %>
   </div>
 
-  <div class="form-actions">
-    <%= f.button :submit, 'Salvar Vaga', class: 'btn-primary' %>
+  <div class="mb-6">
+    <%= f.input :description, as: :rich_text_area, label: 'Descrição Detalhada da Vaga', input_html: {
+      class: 'shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-48'
+      }, label_html: { class: 'block text-gray-700 text-sm font-bold mb-2' } %>
+  </div>
+
+  <div class="flex items-center justify-between">
+    <%= f.button :submit, 'Salvar',
+      class: 'bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline' %>
+    <%= link_to 'Voltar', vagas_path,
+      class: 'inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800' %>
   </div>
 <% end %>
