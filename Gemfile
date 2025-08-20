@@ -59,7 +59,7 @@ end
 gem "devise", "~> 4.9" # Authentication solution for Rails
 gem "pundit" # Authorization library for Rails
 gem "simple_form", "~> 5.1" # Forms made easy in Rails
-gem "pagy", "~> 6.4"
+gem "pagy", "~> 9.4"
 gem "sidekiq", "~> 7.0" # Background job processing
 gem "letter_opener", "~> 1.0" # Preview emails in development
 gem "faker", "~> 2.21" # Generate fake data for testing

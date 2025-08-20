@@ -306,7 +306,7 @@ GEM
     numerizer (0.1.1)
     orm_adapter (0.5.0)
     ostruct (0.6.3)
-    pagy (6.5.0)
+    pagy (9.4.0)
     parallel (1.27.0)
     parser (3.3.9.0)
       ast (~> 2.4.1)
@@ -630,7 +630,7 @@ DEPENDENCIES
   letter_opener (~> 1.0)
   meta-tags (~> 2.16)
   mini_magick (~> 4.11)
-  pagy (~> 6.4)
+  pagy (~> 9.4)
   propshaft
   public_activity (~> 1.6)
   puma (>= 5.0)
