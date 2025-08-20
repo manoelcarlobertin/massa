@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-
+# ruby 3.3.0
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 8.0.2", ">= 8.0.2.1"
 # The modern asset pipeline for Rails [https://github.com/rails/propshaft]
@@ -38,7 +38,7 @@ gem "kamal", require: false
 gem "thruster", require: false
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
-# gem "image_processing", "~> 1.2"
+gem "image_processing", "~> 1.2"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -55,3 +55,26 @@ group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
 end
+
+gem "devise", "~> 4.9" # Authentication solution for Rails
+gem "pundit" # Authorization library for Rails
+gem "simple_form", "~> 5.1" # Forms made easy in Rails
+gem "pagy", "~> 6.4"
+gem "sidekiq", "~> 7.0" # Background job processing
+gem "letter_opener", "~> 1.0" # Preview emails in development
+gem "faker", "~> 2.21" # Generate fake data for testing
+gem "rspec-rails", "~> 6.0" # RSpec for testing Rails applications
+gem "factory_bot_rails", "~> 6.2" # Factory Bot for setting up Ruby objects as test data
+gem "shoulda-matchers", "~> 5.0" # RSpec matchers for testing Rails applications
+gem "database_cleaner-active_record", "~> 2.0" # Strategy for cleaning the database in tests
+gem "capybara-screenshot", "~> 1.0" # Take screenshots of failed Capybara tests
+gem "capybara", "~> 3.38" # Integration testing tool for Rails applications
+gem "selenium-webdriver", "~> 4.0" # WebDriver for browser automation in tests
+gem "rubocop", "~> 1.50" # Ruby static code analyzer and formatter
+gem "rubocop-rspec", "~> 2.0" # RSpec-specific RuboCop cops
+gem "rubocop-rails", "~> 2.0" # Rails-specific RuboCop cops
+gem "dotenv-rails", "~> 2.8" # Load environment variables from .env files
+gem "rack-cors", "~> 1.1" # Middleware for handling Cross-Origin Resource Sharing (CORS)
+gem "rack-mini-profiler", "~> 2.3" # Performance profiling for Rails applications
+gem "rollbar", "~> 3.3" # Error tracking and monitoring service
+gem "redis", "~> 4.6" # Redis client for Ruby
